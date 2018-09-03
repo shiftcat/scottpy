@@ -8,10 +8,10 @@ services:
     volumes:
       - '/mnt/data/dbdata/mysql/scott:/var/lib/mysql'
     environment:
-        - MYSQL_ROOT_PASSWORD=rhksflwkpw
+        - MYSQL_ROOT_PASSWORD=${MYSQL_ROOT_PASSWORD}
         - MYSQL_DATABASE=scott
         - MYSQL_USER=scott_dev
-        - MYSQL_PASSWORD=tmzktroqkfpw
+        - MYSQL_PASSWORD=${MYSQL_PASSWORD}
     # command: mysqld --lower_case_table_names=1 --skip-ssl
     command: mysqld --lower_case_table_names=1
 
@@ -32,4 +32,4 @@ services:
       - DATABASE_PORT=3306
       - DATABASE_NAME=scott
       - DATABASE_USER=scott_dev
-      - DATABASE_PASSWD=tmzktroqkfpw
+      - DATABASE_PASSWD=${MYSQL_PASSWORD}
