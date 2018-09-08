@@ -15,9 +15,9 @@ class Emp(db.Model):
         ename   사원 이름
         job     업무
         mgr     관리자 사번
-        hiredate    사원의 생일
+        hiredate    입사일자
         sal     급여
-        comm    보너스
+        comm    커미션
         deptno  소속 부서 번호
         dept    소숙 부서 정보
 

@@ -38,9 +38,9 @@ emp_base_schem = {
     'ename': fields.String(required=True, description='사원의 이름', min_length=2, max_length=10, example='홍길동'),
     'job': fields.String(required=True, description='사원의 역할', min_length=2, max_length=9, example='개발자'),
     'mgr': fields.Integer(required=False, description='관리자 사원 번호', example=7782),
-    'hiredate': fields.Date(required=True, description='YYYY-MM-DD 형식의 사원 생일', example='2018-01-01'),
+    'hiredate': fields.Date(required=True, description='YYYY-MM-DD 형식의 입사일자', example='2018-01-01'),
     'sal': fields.Float(required=True, description='사원 급여', min=0, max=99999, example=9000),
-    'comm': fields.Float(required=False, description='사원 보너스', min=0, max=99999, example=9000),
+    'comm': fields.Float(required=False, description='커미션', min=0, max=99999, example=9000),
 }
 
 # 위 사원정보에 부서번호를 포함한 모델.
